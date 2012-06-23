@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/clearer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+
+    <jabara.android.uchiwa4.DrawView
+        android:id="@+id/drawView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/clearer"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/clearer"
+        android:background="#0000ff"
+        android:text="Blue" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/blue"
+        android:background="#00ff00"
+        android:text="Green" />
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/green"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/green"
+        android:background="#ff0000"
+        android:text="Red" />
+
+</RelativeLayout>
